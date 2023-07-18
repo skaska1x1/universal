@@ -1,0 +1,172 @@
+.navbar__middle {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navbar__middle-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4em;
+
+        img {
+            padding-left: 1em;
+        }
+
+        p {
+            line-height: 20px;
+            color: var(--grey85);
+            margin-left: -3em;
+        }
+    }
+
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-weight: bolder;
+        font-size: 60px;
+        color: var(--grey100);
+    }
+
+    .navbar__middle-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4em;
+
+        .navbar__middle-data {
+            p {
+                color: var(--grey85);
+                line-height: 20px;
+            }
+        }
+
+        .navbar__middle-temp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            svg{
+                cursor: pointer;
+                position: fixed;
+                z-index: 99;
+                // background-color: var(--grey15);
+                filter: drop-shadow(0 0 4px var(--grey05));
+
+                & path{
+                    filter: drop-shadow(0 0 4px var(--primary-color));
+                }
+
+                &:hover{
+                    & path{
+                        fill: var(--secondary-color);
+                    }
+                }
+            }
+
+            .dark-mode-box{
+                width: 20px;
+                height: 20px;
+                // svg{
+                //     cursor: pointer;
+                //     position: fixed;
+                //     z-index: 99;
+                //     // background-color: var(--grey15);
+                //     filter: drop-shadow(0 0 4px var(--grey05));
+    
+                //     & path{
+                //         filter: drop-shadow(0 0 4px var(--primary-color));
+                //     }
+    
+                //     &:hover{
+                //         & path{
+                //             fill: var(--secondary-color);
+                //         }
+                //     }
+                // }
+            }
+
+            p {
+                color: var(--grey85);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: .3em;
+                >svg{
+                    position: relative;
+                    cursor: default;
+                    filter: drop-shadow(0 0 0 var(--primary-color));
+                    
+                    & path{
+                        filter: drop-shadow(0 0 0 var(--primary-color));
+                    }
+                    &:hover{
+                        & path{
+                            fill: var(--grey85);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// breakpoints .navbar__middle
+
+@media (max-width: 1199px) {
+    .navbar__middle {
+
+        .navbar__middle-right {
+            gap: 1em;
+
+            .navbar__middle-temp {
+                gap: .1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar__middle {
+        font-size: 13px;
+        h1 {
+            font-size: 50px;
+        }
+        .navbar__middle-right {
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar__middle-left {
+        p {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar__middle {
+        .navbar__middle-right {
+            position: absolute;
+            top: -10em;
+            .navbar__middle-temp {
+                >svg{
+                    position: fixed;
+                    top: 4em;
+                    right: 2em;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar__middle {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}

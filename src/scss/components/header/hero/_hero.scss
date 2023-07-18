@@ -1,0 +1,15 @@
+@import './hero-list';
+@import './hero-video';
+
+.hero {
+
+    .hero-bg {
+        background-color: var(--grey100);
+        position: absolute;
+        top: 10em;
+        left: 0;
+        right: 0;
+        bottom: 18em;
+        z-index: -1;
+    }
+}

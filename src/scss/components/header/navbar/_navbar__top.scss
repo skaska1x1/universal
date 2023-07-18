@@ -1,0 +1,154 @@
+.navbar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--borderline-color);
+
+    .navbar__top-left {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+
+        .hamburger-menu {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+            border-right: 1px solid var(--borderline-color);
+            padding: 1em;
+            padding-left: 0;
+
+            .hamburger-menu svg {
+                cursor: pointer;
+            }
+        }
+
+        .search-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            cursor: pointer;
+
+            & svg {
+                position: absolute;
+                cursor: pointer;
+            }
+            & input {
+                background-color: var(--primary-color);
+                color: var(--secondary-color);
+                padding-left: 2em;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    .navbar__top-right {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5em;
+
+        .subscribe-section {
+            display: flex;
+            justify-content: space-between;
+            padding-top: .5em;
+            gap: .5em;
+
+            .subscribe-section__desc {
+                position: relative;
+                padding: .3em;
+
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: var(--grey50);
+                }
+
+                a {
+                    font-size: 10px;
+                    font-weight: 800;
+                    line-height: 15px;
+                    color: var(--grey100);
+                }
+            }
+
+
+        }
+
+        .authentication {
+            position: relative;
+            padding: 1em;
+            padding-right: 0;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                svg path{
+                    fill: var(--blue75);
+                    transition: all .5s ease-in;
+                }
+            }
+
+            svg {
+                position: absolute;
+                left: -0.7em;
+                cursor: pointer;
+            }
+
+            a {
+                cursor: pointer;
+                transform: translateX(-1.5em);
+
+                p {
+                    color: var(--secondary-color);
+                    position: relative;
+                    right: -1.5em;
+
+                    &:hover{
+                        color: var(--blue75);
+                        transition: all .5s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// breakpoints .navbar__top
+
+/* sm-размер (<=768px) */
+/* CSS для ширины от 576px до 767px */
+
+@media (max-width: 767px) {
+    .navbar__top-right {
+        gap: 1em;
+    }
+
+    .subscribe-section img {
+        display: none;
+    }
+}
+
+/* xs-размер (<=575px) */
+/* CSS для ширины до 575px (включительно) */
+
+@media (max-width: 575px) {
+    .hamburger-menu p {
+        display: none;
+    }
+
+    .search-section input {
+        width: 4em;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .search-section input {
+        width: 0;
+    }
+}

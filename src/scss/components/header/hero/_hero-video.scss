@@ -1,0 +1,562 @@
+.hero__video {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 2em;
+
+    .video-container {
+        background: no-repeat url("../../src/assets/img/bg-hero-video.jpg");
+        background-size: 877px 570px;
+        padding: 0 0 0 4em;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        .person-info {
+            display: flex;
+            padding: 4em 0 0 0;
+            gap: 1em;
+            align-items: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--primary-color);
+            mix-blend-mode: normal;
+            opacity: 0.85;
+            margin-bottom: 10.36em;
+
+            .avatar {}
+
+            .desc {
+                .person-name {}
+
+                .person-hobby {
+                    opacity: 0.4;
+                }
+            }
+
+        }
+
+        h2 {
+            color: var(--blue75);
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5em;
+        }
+
+        .video-panel {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            margin-bottom: 6em;
+
+            .panel-btn2 {
+                position: relative;
+                left: 12.5em;
+                background-color: transparent;
+                gap: .7em;
+
+                svg {
+                    path{
+                        fill: var(--primary-color);
+                    }
+                }
+
+                .btn-desc {
+                    text-align: left;
+
+                    p {
+                        opacity: 0.85;
+                    }
+
+                    span {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+
+    .video__list {
+        background-color: var(--primary-color);
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 24%;
+        font-size: 14px;
+
+        >p {
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--grey100);
+            align-items: center;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 1.5em 2em;
+        }
+
+        ul {
+            width: 100%;
+            padding-top: .8em;
+
+            .video__list-active {
+                background-color: var(--grey05);
+            }
+
+            li {
+                padding: 1.2em 1.8em;
+                border-top: 1px solid var(--grey15);
+
+                a {
+
+                    p {
+                        // width: 72%;
+                        line-height: 20px;
+                    }
+
+                    &:hover {
+                        color: var(--grey100);
+                        display: inline-block;
+                    }
+
+                    .video__list-title {
+                        text-transform: uppercase;
+                        color: var(--greyblue75);
+                        letter-spacing: 0.5px;
+                        margin-bottom: .5em;
+                        font-size: 12px;
+                    }
+
+                    .video__list-text {
+                        color: var(--grey85);
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .hero__video {
+        margin: 0 1.5em;
+
+        .video-container {
+
+
+            .person-info {
+
+                .avatar {}
+
+                .desc {
+                    .person-name {}
+
+                    .person-hobby {}
+                }
+
+            }
+
+            h2 {}
+
+            h1 {}
+
+            .video-panel {
+
+
+                button {}
+
+                .panel-btn1 {
+
+
+                    p {}
+
+                    img {}
+                }
+
+                .panel-btn2 {
+
+
+                    img {}
+
+                    .btn-desc {
+
+                        p {}
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+        .video__list {
+            width: 35%;
+
+            >p {}
+
+            ul {
+
+                .video__list-active {}
+
+                li {
+
+                    a {
+
+                        p {}
+
+                        &:hover {}
+
+                        .video__list-title {}
+
+                        .video__list-text {}
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 995px) {
+    .hero__video {
+
+        .video-container {
+
+            .person-info {
+
+                .avatar {}
+
+                .desc {
+                    .person-name {}
+
+                    .person-hobby {}
+                }
+
+            }
+
+            h2 {}
+
+            h1 {}
+
+            .video-panel {
+
+
+                button {}
+
+                .panel-btn1 {
+
+
+                    p {}
+
+                    img {}
+                }
+
+                .panel-btn2 {
+
+
+                    img {}
+
+                    .btn-desc {
+
+                        p {}
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+        .video__list {
+            width: 50%;
+
+            >p {}
+
+            ul {
+
+                .video__list-active {}
+
+                li {
+
+                    a {
+
+                        p {}
+
+                        &:hover {}
+
+                        .video__list-title {}
+
+                        .video__list-text {}
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .hero__video {
+
+        .video-container {
+
+            .person-info {
+
+                .avatar {}
+
+                .desc {
+                    .person-name {}
+
+                    .person-hobby {}
+                }
+
+            }
+
+            h2 {}
+
+            h1 {}
+
+            .video-panel {
+
+
+                button {}
+
+                .panel-btn1 {
+
+
+                    p {}
+
+                    img {}
+                }
+
+                .panel-btn2 {
+
+
+                    img {}
+
+                    .btn-desc {
+
+                        p {}
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+        .video__list {
+            width: 30%;
+
+            >p {
+                font-size: smaller;
+                line-height: normal;
+            }
+
+            ul {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                .video__list-active {}
+
+                li {
+
+                    a {
+
+                        p {}
+
+                        &:hover {}
+
+                        .video__list-title {}
+
+                        .video__list-text {
+                            display: none;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero__video {
+
+        .video-container {
+
+            .person-info {
+                margin-bottom: 7em;
+
+                .avatar {}
+
+                .desc {
+                    .person-name {}
+
+                    .person-hobby {}
+                }
+
+            }
+
+            h2 {
+                color: var(--primary-color);
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .video-panel {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: .5em;
+
+                button {}
+
+                .panel-btn1 {
+                    position: relative;
+
+                    p {}
+
+                    img {}
+                }
+
+                .panel-btn2 {
+                    left: 0;
+
+                    img {}
+
+                    .btn-desc {
+
+                        p {}
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+        .video__list {
+
+
+            >p {}
+
+            ul {
+
+                .video__list-active {}
+
+                li {
+
+                    a {
+
+                        p {}
+
+                        &:hover {}
+
+                        .video__list-title {}
+
+                        .video__list-text {}
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 611px) {
+    .hero__video {
+        display: none;
+
+        .video-container {
+            padding: 8em;
+
+            .person-info {
+                display: none;
+
+                .avatar {}
+
+                .desc {
+                    .person-name {}
+
+                    .person-hobby {}
+                }
+
+            }
+
+            h2 {
+                display: none;
+            }
+
+            h1 {
+                display: none;
+            }
+
+            .video-panel {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0;
+
+                button {}
+
+                .panel-btn1 {
+                    display: none;
+
+                    p {
+                        // display: none;
+                    }
+
+                    img {}
+                }
+
+                .panel-btn2 {
+
+
+                    img {}
+
+                    .btn-desc {
+                        display: none;
+
+                        p {}
+
+                        span {}
+                    }
+                }
+            }
+        }
+
+        .video__list {
+
+
+            >p {
+                background-color: transparent;
+            }
+
+            ul {
+                display: none;
+
+                .video__list-active {}
+
+                li {
+
+                    a {
+
+                        p {}
+
+                        &:hover {}
+
+                        .video__list-title {}
+
+                        .video__list-text {}
+                    }
+
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.hero__list {
+    background-color: var(--grey95);
+    border-radius: 10px;
+    margin-bottom: 1em;
+
+    ul {
+        display: flex;
+        align-items: center;
+        padding: 2em 1.5em;
+
+        li {
+            display: flex;
+            padding: 0 1em;
+            gap: 1.5em;
+            align-items: center;
+
+            &:not(:last-child) {
+                border-right: 1px solid var(--grey85);
+            }
+
+            p {
+                color: var(--primary-color);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 25px;
+                font-family: 'Roboto Slab';
+            }
+
+            img {
+                height: 65px;
+            }
+        }
+
+    }
+}
+
+/* breakpoints  */
+
+@media (max-width: 1199px) {
+    .hero__list {
+        margin: 0 1.5em 1em;
+
+        ul {
+
+            li {
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                align-items: start;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 995px) {
+    .hero__list {
+        margin: 0 1.5em;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            li {
+
+                &:nth-child(2n) {
+                    border-right: 1px solid transparent;
+                }
+
+                &:nth-child(-n+2) {
+                    border-bottom: 1px solid var(--grey85);
+                    padding-bottom: 1em;
+                }
+
+                &:nth-child(n+3) {
+                    padding-top: 1em;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 852px) {
+    .hero__list {
+        margin: 0 1.5em 1em;
+
+        ul {
+
+            li {
+
+                &:nth-child(2n) {
+                    border-right: 1px solid transparent;
+                }
+
+                &:nth-child(-n+2) {
+                    border-bottom: 1px solid var(--grey85);
+                    padding-bottom: 1em;
+                }
+
+                &:nth-child(n+3) {
+                    padding-top: 1em;
+                }
+
+                p {
+                    font-size: large;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 590px) {
+    .hero__list {
+
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+
+            li {
+                &:not(:last-child) {
+                    border: none;
+                }
+            }
+
+        }
+    }
+}

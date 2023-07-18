@@ -1,0 +1,8 @@
+@import "../header/navbar/navbar";
+@import "./hero/_hero";
+
+.header {
+    position: relative;
+    max-width: var(--tablet);
+    margin: 0 auto;
+}

@@ -1,0 +1,26 @@
+@import "./_navbar__top.scss";
+@import "./_navbar__middle.scss";
+@import "./_navbar__bottom.scss";
+
+.navbar {
+    padding: 0 1em;
+    margin-bottom: 7em;
+}
+
+// @media (max-width: 1199px) {
+//     .navbar {
+//         margin-bottom: 9em;
+//     }
+// }
+
+@media (max-width: 767px) {
+    .navbar {
+        margin-bottom: 12em;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar {
+        margin-bottom: 17em;
+    }
+}

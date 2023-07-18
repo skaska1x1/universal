@@ -1,0 +1,65 @@
+.navbar__bottom {
+    position: absolute;
+    background-color: var(--grey100);
+    padding: 1em 0;
+    left: 0;
+    right: 0;
+
+    ul {
+        margin: 0 auto;
+        max-width: var(--container-adaptive);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 1em;
+        gap: 1em;
+        text-align: center;
+
+        li {
+
+            a {
+                text-transform: uppercase;
+                line-height: 20px;
+                color: var(--primary-color);
+
+                &:hover {
+                    opacity: .5;
+                }
+            }
+
+        }
+    }
+}
+
+/* breakpoints  */
+
+@media (max-width: 991px) {
+    .navbar__bottom {
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar__bottom {
+        margin-bottom: 1em;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar__bottom {
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

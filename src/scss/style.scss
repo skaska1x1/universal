@@ -1,0 +1,35 @@
+@import "./components/_global.scss";
+@import "./components/header/_header.scss";
+@import "./components/grid-section/_grid-section.scss";
+@import "./components/list-box/_list-box.scss";
+@import "./components/feedback-box/_feedback-box.scss";
+@import "./components/email-box/_email-box.scss";
+@import "./components/footer/_footer.scss";
+
+.middle-box {
+    background: no-repeat url(../../src/assets/img/bg-middle.jpg);
+    background-size: cover;
+    padding: 3.5em 5em;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    .h1 {
+        padding: 0 7em;
+        margin-bottom: .5em;
+    }
+
+    >button {
+        position: relative;
+    }
+}
+
+@media (max-width: 991px) {
+    .middle-box {
+        .h1 {
+            padding: 0;
+        }
+    }
+}
