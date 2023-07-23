@@ -15,6 +15,7 @@
     --borderline-color: rgb(128, 128, 128, .4);
     --red75: #FF4F52;
     --bluegreen75: #3BBDC4;
+    --blue95: #002b67;
     --blue75: #4592FF;
     --blue25: #C5E4FC;
     --greyblue75: #6E99AE;
@@ -22,6 +23,7 @@
     --purple75: #AC8EE3;
     --purple25: #E7D9FF;
     --svg-defalt: #BCBFC2;
+    --modal-color: rgb(255, 255, 255, 0.4);
 
     font-family: 'Lato', sans-serif;
     /* font-family: 'Roboto Slab', serif; */
@@ -44,6 +46,8 @@ a:hover {
 .dark-mode {
     --primary-color: #000;
     --secondary-color: #fff;
+
+    --modal-color: rgba(0, 0, 0, 0.8);
 
     --bg-base: #212020;
     --grey05: #c9bdbd;
@@ -166,4 +170,113 @@ button {
 .visible{
     pointer-events: auto;
     opacity: 1;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: -100em;
+    left: 0;
+    right: 0;
+    background-color: var(--modal-color);
+    z-index: 100;
+    overflow-y: hidden;
+    backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .close{
+        display: flex;
+        position: absolute;
+        z-index: 100;
+        transform: translate(750%, -950%);
+        border-radius: 50%;
+        color: var(--grey100);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 1em ;
+        text-align: center;
+        border-radius: 12px;
+        border: 1px solid var(--secondary-color);
+        background-color: var(--primary-color);
+        
+        padding: 2em 3em;
+
+        h1{
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            font-size: 26px;
+            font-weight: 500;
+            margin-bottom: 1em;
+        }
+
+        .input-box{
+            width: 100%;
+            height: 50px;
+            display: flex;
+
+            input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: 0;
+                border-bottom: 2px solid #ccc;
+                background-color: transparent;
+                color: var(--secondary-color);
+                padding: 0 1em;
+
+                &::placeholder{
+                    color: var(--secondary-color)
+                }
+            }
+            
+        }
+        
+        a{
+            color: var(--secondary-color);
+            border-bottom: 1px solid;
+
+            &:hover{
+                color: var(--blue75);
+            }
+        }
+        .remember-forgot{
+            color: var(--secondary-color);
+            display: flex;
+            gap: 1em;
+        }
+        .register-link{
+            color: var(--secondary-color);
+        }
+
+        .btn{
+            width: 100%;
+            height: 50px;
+            background-color: var(--grey15);
+            color: var(--grey100);
+            display: flex;
+            justify-content: center;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 1s ease-in;
+
+            &:hover{
+                /* background-color: var(--grey50); */
+                opacity: .3;
+                transition: all 1s ease-in;
+            }
+        }
+    }
+}
+
+.modal-hidden{
+    display: none;
+    opacity:0;
 }

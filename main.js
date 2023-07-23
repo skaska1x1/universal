@@ -72,6 +72,22 @@ window.addEventListener("scroll", function (event) {
   event.stopPropagation();
 });
 
+// modal
+const modalOn = document.querySelector('.authentication');
+const modal = document.querySelector('.modal');
+const closeModal = document.querySelector('.close');
+
+modalOn.onclick = () => {
+  modal.classList.remove('modal-hidden');
+  body.style.overflow="hidden";
+}
+
+closeModal.onclick = () => {
+  modal.classList.add('modal-hidden');
+  body.style.overflow="auto";
+}
+
+
 
 
 
